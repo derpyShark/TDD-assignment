@@ -1,6 +1,6 @@
 ﻿namespace RecentlyUsedListKato
 {
-    public class Class1
+    public class RecentlyUsedListKato
     {
 
     }
