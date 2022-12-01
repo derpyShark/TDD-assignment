@@ -59,7 +59,7 @@ namespace KataTests
 
             var result = StringSumKata.AddStringNaturalNumbers(num1, num2);
 
-            result.Should().Be("9437");
+            result.Should().Be("8437");
         }
 
         [Test]
