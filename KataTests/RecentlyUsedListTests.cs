@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using FluentAssertions;
+using Kata;
 
 namespace KataTests
 {
@@ -7,9 +8,9 @@ namespace KataTests
     public class RecentlyUsedListTests
     {
         [Test]
-        public void Should()
+        public void ShouldHaveNewestItemFirstLatestItemLast()
         {
-
+            var recentlyUsedList = new RecentlyUsedList();
         }
     }
 }
