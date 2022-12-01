@@ -28,7 +28,7 @@ namespace KataTests
 
             var action = () => recentlyUsedList[0];
 
-            action.Should().Throw<IndexOutOfRangeException>();
+            action.Should().Throw<ArgumentOutOfRangeException>();
         }
 
         [Test]
@@ -47,7 +47,7 @@ namespace KataTests
 
             recentlyUsedList[0].Should().Be(thirdAddedString);
             recentlyUsedList[1].Should().Be(secondAddedString);
-            thirdElementIndexing.Should().Throw<IndexOutOfRangeException>();
+            thirdElementIndexing.Should().Throw<ArgumentOutOfRangeException>();
         }
 
         [Test]
@@ -85,9 +85,9 @@ namespace KataTests
             recentlyUsedList[0].Should().Be(str6);
             recentlyUsedList[1].Should().Be(str5);
             recentlyUsedList[2].Should().Be(str4);
-            recentlyUsedList[3].Should().Be(str2);
-            recentlyUsedList[4].Should().Be(str1);
-            sixElementIndexing.Should().Throw<IndexOutOfRangeException>();
+            recentlyUsedList[3].Should().Be(str3);
+            recentlyUsedList[4].Should().Be(str2);
+            sixElementIndexing.Should().Throw<ArgumentOutOfRangeException>();
         }
 
         [Test]
@@ -97,7 +97,7 @@ namespace KataTests
 
             var negativeIndexing = () => recentlyUsedList[-1];
 
-            negativeIndexing.Should().Throw<IndexOutOfRangeException>();
+            negativeIndexing.Should().Throw<ArgumentOutOfRangeException>();
         }
     }
 }
