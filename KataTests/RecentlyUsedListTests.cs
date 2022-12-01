@@ -80,6 +80,8 @@ namespace KataTests
 
             var sixElementIndexing = () => recentlyUsedList[5];
 
+
+            recentlyUsedList.Size.Should().Be(5);
             recentlyUsedList[0].Should().Be(str6);
             recentlyUsedList[1].Should().Be(str5);
             recentlyUsedList[2].Should().Be(str4);
