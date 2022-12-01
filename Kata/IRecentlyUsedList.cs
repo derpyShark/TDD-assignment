@@ -2,7 +2,7 @@
 {
     internal interface IRecentlyUsedList
     {
-        public void Add();
+        public void Add(string value);
 
         public string this[int index] { get; set; }
     }
