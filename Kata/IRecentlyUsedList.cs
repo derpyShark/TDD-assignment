@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Kata
+﻿namespace Kata
 {
-    internal interface IRecentlyUsedList
+    internal interface IRecentlyUsedList<T>
     {
+        public void Add();
+
+        public T this[int index] { get; set; }
     }
 }
