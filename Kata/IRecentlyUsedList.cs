@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KatoTests
+namespace Kata
 {
-    public class RecentlyUsedListKatoTests
+    internal interface IRecentlyUsedList
     {
     }
 }
