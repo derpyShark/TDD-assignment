@@ -1,9 +1,9 @@
 ﻿namespace Kata
 {
-    internal interface IRecentlyUsedList<T>
+    internal interface IRecentlyUsedList
     {
         public void Add();
 
-        public T this[int index] { get; set; }
+        public string this[int index] { get; set; }
     }
 }
