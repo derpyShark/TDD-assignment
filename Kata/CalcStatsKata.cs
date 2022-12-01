@@ -4,22 +4,37 @@
     {
         public static int GetMinimumValue(IEnumerable<int> values)
         {
-            throw new NotImplementedException();
+            if (values.Count() == 0)
+            {
+                throw new ArgumentException();
+            }
+
+            return values.Min();
         }
 
         public static int GetMaximumValue(IEnumerable<int> values)
         {
-            throw new NotImplementedException();
+            if (values.Count() == 0)
+            {
+                throw new ArgumentException();
+            }
+
+            return values.Max();
         }
 
         public static int GetNumberOfElementsInTheSequence(IEnumerable<int> values)
         {
-            throw new NotImplementedException();
+            return values.Count();
         }
 
-        public static float GetAverageValue(IEnumerable<int> values)
+        public static double GetAverageValue(IEnumerable<int> values)
         {
-            throw new NotImplementedException();
+            if (values.Count() == 0)
+            {
+                throw new ArgumentException();
+            }
+
+            return (double)values.Average();
         }
     }
 }

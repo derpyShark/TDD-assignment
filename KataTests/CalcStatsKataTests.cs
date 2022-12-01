@@ -63,9 +63,9 @@ namespace KataTests
         {
             var sequence = new int[] { 6, 9, 15, -2, 92, 11 };
 
-            var result = CalcStatsKata.GetMinimumValue(sequence);
+            var result = CalcStatsKata.GetAverageValue(sequence);
 
-            result.Should().Be(-2);
+            result.Should().BeApproximately(21.833333, 10e-6);
         }
 
         [Test]
